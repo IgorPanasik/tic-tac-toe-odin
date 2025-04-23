@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Tic Tac Toe | The Odin Project</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="description ">
+			<h1 class="title">Tic Tac Toe</h1>
+			<p class="rules">
+				To start playing, click any <strong>cell</strong> on the game board.
+				If you don’t enter any player names, they will default to <strong>"Player #One"</strong> and <strong>"Player
+					#Two"</strong>.
+			</p>
+		</header>
+		<main>
+
+			<div class="players">
+				<form>
+					<p class="player-one">
+						<label for="player-one">Name of Player One
+							<span>(Marker: X)</span>
+							<input type="text" id="player-one">
+						</label>
+					</p>
+
+					<p class="player-two">
+						<label for="player-two">Name of Player Two
+							<span>(Marker: O)</span>
+							<input type="text" id="player-two">
+						</label>
+					</p>
+
+				</form>
+				<button type="button" class="reset-game">Reset Game</button>
+			</div>
+
+			<p class="player-turn"></p>
+			<div class="dashboard"></div>
+			<p class="show-message"></p>
+		</main>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
